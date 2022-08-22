@@ -1,0 +1,32 @@
+---
+export interface Props {
+	header: string;
+	paragraphs: string[];
+    bullets?: string[];
+}
+
+const { 
+    header = "Morbi tincidunt", 
+    paragraphs = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."], 
+    bullets
+} = Astro.props as Props;
+---
+
+<div>
+    <h2>{header}</h2>
+    {paragraphs.map((paragraph) => (
+        <>
+            <p> {paragraph} </p>
+        </>
+      ))}
+    <ul>
+        {bullets && bullets.map((bullet) => (
+            <>
+                <p> {bullet} </p>
+            </>
+        ))}
+    </ul>
+</div>
+<style>
+	
+</style>

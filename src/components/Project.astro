@@ -1,0 +1,16 @@
+---
+import StandardSection from './StandardSection.astro'
+import LinkButton from './linkButton.astro';
+
+export interface Props {
+        name: string;
+        about: string[];
+        links: Array<{ id: number, buttonText: string, href: string }>;
+}
+
+const { name, about, links } = Astro.props as Props;
+
+---
+
+<StandardSection header={name} paragraphs={about}/>
+<LinkButton links={links}/>

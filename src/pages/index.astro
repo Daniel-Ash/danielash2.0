@@ -1,0 +1,41 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import StandardSection from "../components/StandardSection.astro";
+import Project from "../components/Project.astro"
+---
+
+<Layout title="Hey | Dan Ash">
+	<main>
+		<Hero />
+		<StandardSection
+			header="About Me"
+			paragraphs={[
+						"Hey! I'm Dan, a tech professional from New Zealand who is based in the United Kingdom.",
+			]}
+		/>
+		<StandardSection
+			header="Work"
+			paragraphs={[
+						"I have run product at several very early stage (less than 10 people, pre product-market fit) startups. Beyond that I have a background in Data Science & Machine Learning from my time as a Data Analyst at New Zealand's largest online school.",
+			]}
+		/>
+		<StandardSection
+			header="Interests"
+			paragraphs={[
+						"I am endlessly curious, and explore many subjects in my spare time - although they mostly seem to converge around tech.",
+						"Although I am unlikely to update this frequently, recent examples include:"
+			]}
+			bullets={[
+				"Troy Hunt's blog. Especially his posts on how he's built various services like Password Purgatory and Pwned Passwords. Those posts are what led me to deploy this site via Cloudflare pages.",
+				"Distributed systems. In particular, I have been enjoying this lecture series by Martin Kleppmann.",
+				"Colour theory, including the physics of colour. Check out this video by Marco Bucci."
+			]}
+		/>
+		<Project name="Don McNewt" about={["Lorem Ipsum"]} links={[ {id: 0, buttonText:"View my Linkedin", href:"https://www.linkedin.com/in/dan-ash-401352b9/"}, {id: 1, buttonText:"dan@danielash.me", href:"mailto:dan@danielash.me"} ]}/>
+	</main>
+</Layout>
+
+<style>
+
+</style>

@@ -1,0 +1,52 @@
+---
+export interface Props {
+    links: Array<{ id: number, buttonText: string, href: string }>;
+}
+
+const { links } = Astro.props as Props;
+
+---
+    
+    <div class="linkButtonContainer">
+        {links.map((item) => (
+            <>
+                <a class="button" href={item.href}>
+                    <div class="linkButton">
+                        {item.buttonText}
+                    </div>
+                </a>
+            </>
+          ))}
+    </div>
+
+    <style>
+
+        a.button {
+        width: fit-content;
+        text-decoration: none;
+        display: flex;
+        }
+
+        button, .linkButton {
+        width:fit-content;
+        margin-top: 0px;
+        background-color: var(--neutral6);
+        color: var(--neutral10);
+        border-style: none;
+        padding: 5px 10px;
+        font-family: 'Archivo', sans-serif;
+        font-weight: 600; 
+        font-size: 14px;
+        cursor: pointer;
+        text-decoration: none;
+        }
+
+        .linkButtonContainer {
+        display:flex; 
+        gap: 10px;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+        }
+
+    </style>
+
