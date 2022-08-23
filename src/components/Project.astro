@@ -1,15 +1,35 @@
 ---
-import StandardSection from './StandardSection.astro'
 import LinkButton from './LinkButton.astro';
-import type { ProjectModel } from '../types';
+import type { ProjectModel, StandardSectionModel } from '../types';
 
 export interface Props {
-  project: ProjectModel,
+  project: ProjectModel
 }
 
 const { project } = Astro.props as Props;
 
----
+const basicDetails = {
+        header: project.name,
+        paragraphs: project.about
+}
 
-<StandardSection header={project.name} paragraphs={project.about}/>
+---
+<h3>{project.name}</h3>
+
+{project.about.map((paragraph) => (
+        <>
+        <p>{paragraph}</p>
+        </>
+))}
+
 <LinkButton links={project.links}/>
+
+<h4>Key learnings:</h4>
+
+<ul>
+        {project.keyLearnings && project.keyLearnings.map((keyLearning) => (
+                <>
+                    <li> {keyLearning} </li>
+                </>
+            ))}
+</ul>
