@@ -1,6 +1,8 @@
 ---
+import type { ButtonLinkModel } from "../types";
+
 export interface Props {
-    links: Array<{ id: number, buttonText: string, href: string }>;
+    links: ButtonLinkModel[],
 }
 
 const { links } = Astro.props as Props;

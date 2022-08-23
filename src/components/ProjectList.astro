@@ -1,14 +1,9 @@
 ---
+import type { ProjectModel } from '../types';
 import Project from './Project.astro'
 
 export interface Props {
-    projects: Array<{ 
-        id: number; 
-        name: string; 
-        about: string[];
-        links: Array<{ id: number, buttonText: string, href: string }>;
-        bullets?: string[]
-     }>;
+    projects: ProjectModel[];
 }
 
 const { projects } = Astro.props as Props;
@@ -20,7 +15,7 @@ const { projects } = Astro.props as Props;
         projects.map((project) => (
             <>
                 <div>
-                    <Project name={project.name} about={project.about} links={project.links}/>
+                    <Project project={project} />
                 </div>
             </>
         ))
