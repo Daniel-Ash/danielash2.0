@@ -8,11 +8,11 @@ const { links } = Astro.props as Props;
 ---
     
     <div class="linkButtonContainer">
-        {links.map((item) => (
+        {links.map((link) => (
             <>
-                <a class="button" href={item.href}>
+                <a class="button" href={link.href}>
                     <div class="linkButton">
-                        {item.buttonText}
+                        {link.buttonText}
                     </div>
                 </a>
             </>
