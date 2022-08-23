@@ -1,15 +1,20 @@
 ---
 import StandardSection from './StandardSection.astro'
 import LinkButton from './LinkButton.astro';
-import type { ProjectModel } from '../types';
+import type { ProjectModel, StandardSectionModel } from '../types';
 
 export interface Props {
-  project: ProjectModel,
+  project: ProjectModel
 }
 
 const { project } = Astro.props as Props;
 
+const basicDetails = {
+        header: project.name,
+        paragraphs: project.about
+}
+
 ---
 
-<StandardSection header={project.name} paragraphs={project.about}/>
+<StandardSection standardSection={basicDetails}/>
 <LinkButton links={project.links}/>

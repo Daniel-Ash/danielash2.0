@@ -1,26 +1,24 @@
 ---
+import type { StandardSectionModel } from "../types";
+
 export interface Props {
-	header: string;
-	paragraphs: string[];
-    bullets?: string[];
+    standardSection: StandardSectionModel;
 }
 
 const { 
-    header = "Morbi tincidunt", 
-    paragraphs = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."], 
-    bullets
+    standardSection,
 } = Astro.props as Props;
 ---
 
 <div>
-    <h2>{header}</h2>
-    {paragraphs.map((paragraph) => (
+    <h2>{standardSection.header}</h2>
+    {standardSection.paragraphs.map((paragraph) => (
         <>
             <p> {paragraph} </p>
         </>
       ))}
     <ul>
-        {bullets && bullets.map((bullet) => (
+        {standardSection.bullets && standardSection.bullets.map((bullet) => (
             <>
                 <p> {bullet} </p>
             </>

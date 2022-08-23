@@ -11,3 +11,9 @@ export interface ButtonLinkModel {
   buttonText: string,
   href: string,
 }
+
+export interface StandardSectionModel {
+  header: string,
+  paragraphs: string[],
+  bullets?: string[]
+}
