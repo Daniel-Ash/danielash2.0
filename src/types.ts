@@ -3,7 +3,7 @@ export interface ProjectModel {
   name: string,
   about: string[],
   links: ButtonLinkModel[],
-  bullets?: string[],
+  keyLearnings: string[],
 }
 
 export interface ButtonLinkModel {
