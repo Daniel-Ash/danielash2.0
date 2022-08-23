@@ -1,0 +1,31 @@
+---
+import Project from './Project.astro'
+
+export interface Props {
+    projects: Array<{ 
+        id: number; 
+        name: string; 
+        about: string[];
+        links: Array<{ id: number, buttonText: string, href: string }>;
+        bullets?: string[]
+     }>;
+}
+
+const { projects } = Astro.props as Props;
+---
+
+<div>
+    <h2>Projects</h2>
+    {
+        projects.map((project) => (
+            <>
+                <div>
+                    <Project name={project.name} about={project.about} links={project.links}/>
+                </div>
+            </>
+        ))
+    }
+</div>
+<style>
+
+</style>
