@@ -37,11 +37,20 @@ import ProjectList from "../components/ProjectList.astro";
 			id: 0,
 			name: "hello",
 			about:["Lorem Ipsum", "Posts on how he's built various services "],
-			links:{[
+			links:[
 				{id: 0, buttonText:"View my Linkedin", href:"https://www.linkedin.com/in/dan-ash-401352b9/"}, 
 				{id: 1, buttonText:"dan@danielash.me", href:"mailto:dan@danielash.me"},
-				]}
-			},]} />
+				]
+			}, {
+			id: 1,
+			name: "hello",
+			about:["Lorem Ipsum", "Posts on how he's built various services "],
+			links:[
+				{id: 0, buttonText:"View my Linkedin", href:"https://www.linkedin.com/in/dan-ash-401352b9/"}, 
+				{id: 1, buttonText:"dan@danielash.me", href:"mailto:dan@danielash.me"},
+				]
+			}
+		]}/>
 
 		<Project name="Don McNewt" about={["Lorem Ipsum"]} links={[ {id: 0, buttonText:"View my Linkedin", href:"https://www.linkedin.com/in/dan-ash-401352b9/"}, {id: 1, buttonText:"dan@danielash.me", href:"mailto:dan@danielash.me"} ]}/>
 	</main>
