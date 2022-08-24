@@ -10,9 +10,11 @@ import LinkButton from "./LinkButton.astro";
             height="200px"
             alt="Dan's profile photo"
         />
-        <h1>Dan Ash</h1>
-        <LinkButton links={[ {id: 0, buttonText:"View my Linkedin", href:"https://www.linkedin.com/in/dan-ash-401352b9/"}, {id: 1, buttonText:"dan@danielash.me", href:"mailto:dan@danielash.me"} ]} />
-        <div class="divider"></div>
+        <div class="heroContent">
+            <h1>Dan Ash</h1>
+            <LinkButton links={[ {id: 0, buttonText:"View my Linkedin", href:"https://www.linkedin.com/in/dan-ash-401352b9/"}, {id: 1, buttonText:"dan@danielash.me", href:"mailto:dan@danielash.me"} ]} />
+            <div class="divider"></div>
+        </div>
     </div>
     
     <style>
@@ -24,6 +26,13 @@ import LinkButton from "./LinkButton.astro";
     width: 75px; 
     height: 5px;
     margin-bottom: 10px;
+    }
+
+    .heroContent {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 3px;
     }
 
     </style>
