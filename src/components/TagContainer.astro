@@ -12,13 +12,15 @@ const tags = labelledContent.contents
 
 ---
     
-    <div class="tagContainer">
+    <div class="box">
         <h4> {label} </h4>
-        {tags.map((tag) => (
-            <>
-                <div class="tag">{tag}</div>
-            </>
-          ))}
+        <div class="tagContainer">
+            {tags.map((tag) => (
+                <>
+                    <div class="tag">{tag}</div>
+                </>
+            ))}
+          </div>
     </div>
 
     <style>
