@@ -9,22 +9,39 @@ export interface Props {
 const { project } = Astro.props as Props;
 
 ---
-<h3>{project.name}</h3>
+<div class="project">
+        <div>
+                <h3>{project.name}</h3>
 
-{project.about.map((paragraph) => (
-        <>
-        <p><Fragment set:html={paragraph}/></p>
-        </>
-))}
+                {project.about.map((paragraph) => (
+                        <>
+                        <p><Fragment set:html={paragraph}/></p>
+                        </>
+                ))}
 
-<LinkButton links={project.links}/>
+        <LinkButton links={project.links}/>
+        </div>
+        <div>
+                <h4>Key learnings:</h4>
 
-<h4>Key learnings:</h4>
+                <ul>
+                        {project.keyLearnings && project.keyLearnings.map((keyLearning) => (
+                                <>
+                                <li> <Fragment set:html={keyLearning}/> </li>
+                                </>
+                        ))}
+                </ul>
+        </div>
+</div>
 
-<ul>
-        {project.keyLearnings && project.keyLearnings.map((keyLearning) => (
-                <>
-                    <li> <Fragment set:html={keyLearning}/> </li>
-                </>
-            ))}
-</ul>
+
+
+<style>
+
+.project {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+}
+
+</style>

@@ -25,7 +25,7 @@ export const projectContent = [
 	{
 		id: 0,
 		name: "Rocketship ",
-		about:["In this lockdown project I used the prompt of a digital art gallery to explore Vue.js.", "Prior to being introduced to Vue, my programming experience was entirely centered around data analysis - mainly SQL and Jupyter Notebooks. My mind had been blown by the Vue 'get started' guide and I was very keen to build a full front end app."],
+		about:["In this lockdown project I leveraged the prompt of a digital art gallery to explore Vue.js.", "Prior to being introduced to Vue, my programming experience was entirely centered around data analysis - mainly SQL and Jupyter Notebooks. My mind had been blown by the Vue 'get started' guide and I was very keen to build a full front end app."],
 		links:[
 			{id: 0, buttonText:"Go to app", href:"https://rocketship-20.danielash1.repl.co/"}, 
 			{id: 1, buttonText:"View source on Github", href:"https://github.com/Daniel-Ash/Rocketship"},
