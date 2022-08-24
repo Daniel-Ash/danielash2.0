@@ -1,6 +1,7 @@
 ---
 import LinkButton from './LinkButton.astro';
-import type { ProjectModel, StandardSectionModel } from '../types';
+import type { ProjectModel } from '../types';
+import TagContainer from './TagContainer.astro';
 
 export interface Props {
   project: ProjectModel
@@ -20,6 +21,7 @@ const { project } = Astro.props as Props;
                 ))}
 
         <LinkButton links={project.links}/>
+        {project.tags && <TagContainer labelledContent={project.tags}/>}
         </div>
         <div>
                 <h4>Key learnings:</h4>

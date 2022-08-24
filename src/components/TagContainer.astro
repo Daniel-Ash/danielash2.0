@@ -1,0 +1,46 @@
+---
+import type { LabelledContentModel } from "../types";
+
+export interface Props {
+    labelledContent: LabelledContentModel,
+}
+
+const { labelledContent } = Astro.props as Props;
+
+const label = labelledContent.label
+const tags = labelledContent.contents
+
+---
+    
+    <div class="box">
+        <h4> {label} </h4>
+        <div class="tagContainer">
+            {tags.map((tag) => (
+                <>
+                    <div class="tag">{tag}</div>
+                </>
+            ))}
+          </div>
+    </div>
+
+    <style>
+
+        .tag {
+        background-color: var(--neutral3);
+        color: var(--neutral9);
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-family: 'Archivo', sans-serif;
+        font-weight: 400; 
+        font-size: 12px;
+        }
+
+        .tagContainer {
+        display:flex; 
+        gap: 5px;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+        }
+
+    </style>
+

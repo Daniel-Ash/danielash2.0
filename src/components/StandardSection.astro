@@ -1,24 +1,25 @@
 ---
-import type { StandardSectionModel } from "../types";
+import type { LabelledContentModel } from "../types";
 
 export interface Props {
-    standardSection: StandardSectionModel;
+    labelledContent: LabelledContentModel;
 }
 
 const { 
-    standardSection,
+    labelledContent
 } = Astro.props as Props;
+
 ---
 
 <div>
-    <h2>{standardSection.header}</h2>
-    {standardSection.paragraphs.map((paragraph) => (
+    <h2>{labelledContent.label}</h2>
+    {labelledContent.contents.map((paragraph) => (
         <>
             <p><Fragment set:html={paragraph}></Fragment></p>
         </>
       ))}
     <ul>
-        {standardSection.bullets && standardSection.bullets.map((bullet) => (
+        {labelledContent.bullets && labelledContent.bullets.map((bullet) => (
             <>
                 <li><Fragment set:html={bullet}/></li>
             </>

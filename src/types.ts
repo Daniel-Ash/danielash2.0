@@ -3,6 +3,7 @@ export interface ProjectModel {
   name: string,
   about: string[],
   links: ButtonLinkModel[],
+  tags?: LabelledContentModel,
   keyLearnings: string[],
 }
 
@@ -12,8 +13,8 @@ export interface ButtonLinkModel {
   href: string,
 }
 
-export interface StandardSectionModel {
-  header: string,
-  paragraphs: string[],
+export interface LabelledContentModel {
+  label: string,
+  contents: string[],
   bullets?: string[]
 }

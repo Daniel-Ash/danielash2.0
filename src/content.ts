@@ -1,16 +1,16 @@
 export const aboutContent = {
-	header: "About me",
-	paragraphs: ["Hey! I'm Dan, a tech professional from New Zealand who is based in the United Kingdom."]
+	label: "About me",
+	contents: ["Hey! I'm Dan, a tech professional from New Zealand who is based in the United Kingdom."]
 }
 
 export const workContent = {
-	header: "Work",
-	paragraphs: ["I have run product at several very early stage (less than 10 people, pre product-market fit) startups. Beyond that I have a background in Data Science & Machine Learning from my time as a Data Analyst at New Zealand's largest online school.",]
+	label: "Work",
+	contents: ["I have run product at several very early stage (less than 10 people, pre product-market fit) startups. Beyond that I have a background in Data Science & Machine Learning from my time as a Data Analyst at New Zealand's largest online school.",]
 }
 
 export const interestsContent = {
-	header: "Interests",
-	paragraphs: [
+	label: "Interests",
+	contents: [
 				"I am endlessly curious, and explore many subjects in my spare time - although they mostly seem to converge around tech.",
 				"Although I am unlikely to update this frequently, recent examples include:"
 	],
@@ -30,6 +30,14 @@ export const projectContent = [
 			{id: 0, buttonText:"Go to app", href:"https://rocketship-20.danielash1.repl.co/"}, 
 			{id: 1, buttonText:"View source on Github", href:"https://github.com/Daniel-Ash/Rocketship"},
 		],
+		tags:{
+			label: "Technology:",
+			contents: [
+				"Vue.js",
+				"Replit.com",
+				"Firebase"
+			]
+		},
 		keyLearnings:[
 			"Building a Vue site with Vite was awesome. I recall there was a steep learning curve to learn the syntax to pass props between components, but I got there.", 
 			"This project also helped me to get the hang of modern CSS. I was watching a number of <a href='https://www.youtube.com/kepowob'>Kevin Powell videos</a> at the time, and was inspired by his approach to responsive css, for example: allowing elements to breathe and fill space. Resize the page and watch the headers grow/shrink to see this in action. The layout also switches orientation based on flex-overflow rather than via a breakpoint.",
@@ -45,6 +53,14 @@ export const projectContent = [
 		links:[
 			{id: 0, buttonText:"View source on Github", href:"https://github.com/Daniel-Ash/danielash.me/"}, 
 		],
+		tags:{
+			label: "Technology:",
+			contents: [
+				"HTML/CSS/JS",
+				"Cloudflare Pages",
+				"Figma"
+			]
+		},
 		keyLearnings:[
 			"Re: no framework: <ul><li>As my project grew, I was pretty surprised that there wasn't an obvious/simple way to import slabs of static html into my index.html just to clean up the codebase. I entered the rabbithole of web components but that seemed too complicated for what should be very simple.</li> <li>Simultaneously, I have decided not to have show/hide sections, or separate pages simply because it seems overkill to implement the js required when I could reach for a framework. The result - a very long page. I'm probably ready for a framework.. </li> <li>I talk more about it below, but it is nice to have a framework automatically cache bust when static content changes.</li> </ul>", 
 			"Cloudflare Pages is a delight to use. Awesome to simply push to github and have your site available in data centres around the world, for free.", 
@@ -59,6 +75,14 @@ export const projectContent = [
 		about:[
 			"<a href='https://rgdsm.wordpress.com/'>Don McDonald</a> is an eccentric Wellingtonian who proliferates marginally coherent content seemingly ad hoc through a variety of local and digital media, including <a href='https://twitter.com/McDONewt'>Twitter</a>.", 
 			"This Node.js project leveraged the Twitter & Open AI API's to generate and post similar tweets to Don MacDonald at a random cadence. "],
+		tags:{
+			label: "Technology:",
+			contents: [
+				"Node.js",
+				"Open AI API",
+				"Twitter API"
+			]
+		},
 		links:[
 			{id: 0, buttonText:"View source on Github", href:"https://github.com/Daniel-Ash/don-mcnewt-bot"}, 
 		],
