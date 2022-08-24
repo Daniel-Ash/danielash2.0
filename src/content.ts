@@ -1,16 +1,16 @@
 export const aboutContent = {
-	header: "About me",
-	paragraphs: ["Hey! I'm Dan, a tech professional from New Zealand who is based in the United Kingdom."]
+	label: "About me",
+	contents: ["Hey! I'm Dan, a tech professional from New Zealand who is based in the United Kingdom."]
 }
 
 export const workContent = {
-	header: "Work",
-	paragraphs: ["I have run product at several very early stage (less than 10 people, pre product-market fit) startups. Beyond that I have a background in Data Science & Machine Learning from my time as a Data Analyst at New Zealand's largest online school.",]
+	label: "Work",
+	contents: ["I have run product at several very early stage (less than 10 people, pre product-market fit) startups. Beyond that I have a background in Data Science & Machine Learning from my time as a Data Analyst at New Zealand's largest online school.",]
 }
 
 export const interestsContent = {
-	header: "Interests",
-	paragraphs: [
+	label: "Interests",
+	contents: [
 				"I am endlessly curious, and explore many subjects in my spare time - although they mostly seem to converge around tech.",
 				"Although I am unlikely to update this frequently, recent examples include:"
 	],
@@ -59,6 +59,14 @@ export const projectContent = [
 		about:[
 			"<a href='https://rgdsm.wordpress.com/'>Don McDonald</a> is an eccentric Wellingtonian who proliferates marginally coherent content seemingly ad hoc through a variety of local and digital media, including <a href='https://twitter.com/McDONewt'>Twitter</a>.", 
 			"This Node.js project leveraged the Twitter & Open AI API's to generate and post similar tweets to Don MacDonald at a random cadence. "],
+		tags:{
+			label: "Tech used",
+			contents: [
+				"Node.js",
+				"Open AI API",
+				"Twitter API"
+			]
+		},
 		links:[
 			{id: 0, buttonText:"View source on Github", href:"https://github.com/Daniel-Ash/don-mcnewt-bot"}, 
 		],
