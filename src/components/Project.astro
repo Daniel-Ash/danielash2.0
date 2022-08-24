@@ -8,17 +8,12 @@ export interface Props {
 
 const { project } = Astro.props as Props;
 
-const basicDetails = {
-        header: project.name,
-        paragraphs: project.about
-}
-
 ---
 <h3>{project.name}</h3>
 
 {project.about.map((paragraph) => (
         <>
-        <p>{paragraph}</p>
+        <p><Fragment set:html={paragraph}/></p>
         </>
 ))}
 
@@ -29,7 +24,7 @@ const basicDetails = {
 <ul>
         {project.keyLearnings && project.keyLearnings.map((keyLearning) => (
                 <>
-                    <li> {keyLearning} </li>
+                    <li> <Fragment set:html={keyLearning}/> </li>
                 </>
             ))}
 </ul>

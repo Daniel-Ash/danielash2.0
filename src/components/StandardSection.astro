@@ -14,13 +14,13 @@ const {
     <h2>{standardSection.header}</h2>
     {standardSection.paragraphs.map((paragraph) => (
         <>
-            <p> {paragraph} </p>
+            <p><Fragment set:html={paragraph}></Fragment></p>
         </>
       ))}
     <ul>
         {standardSection.bullets && standardSection.bullets.map((bullet) => (
             <>
-                <p> {bullet} </p>
+                <li><Fragment set:html={bullet}/></li>
             </>
         ))}
     </ul>

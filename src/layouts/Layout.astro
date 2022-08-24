@@ -79,6 +79,19 @@ const { title } = Astro.props as Props;
 	margin-bottom: 10px;
 	}
 
+	ul, ol {
+	margin-top: 2px;
+	padding-left: 16px;
+	}
+
+	li {
+	margin-bottom: 2px;
+	}
+
+	a {
+	color:var(--neutral9)
+	} 
+
 	.page {
 	margin-left: 250px;
 	margin-top: 5vh;
@@ -90,4 +103,13 @@ const { title } = Astro.props as Props;
 	max-width: 375px;
 	gap: 10px;
 	}
+
+	@media only screen and (max-width: 1224px) {
+	.page {
+		margin-left: 2vw;
+		margin-top: 5vh;
+	}
+	}
+
+
 </style>
