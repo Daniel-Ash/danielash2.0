@@ -48,7 +48,8 @@ export const projectContent = [
 		id: 1,
 		name: "Danielash.me",
 		about:[
-			"Well, you're looking at it. My goal with this site was to make a good looking portfolio page. At the same time, I wanted to explore building a site without a framework to feel around the edges of vanilla html/css/js.", 
+			"<b>Update! Danielash.me is now an Astro app! Project section incoming.</b>",
+			"<s>Well, you're looking at it</s>. My goal with this site was to make a good looking portfolio page. At the same time, I wanted to explore building a site without a framework to feel around the edges of vanilla html/css/js.", 
 			"I also wanted to focus on performance and accessibility, and to deploy a site using Cloudflare Pages."],
 		links:[
 			{id: 0, buttonText:"View source on Github", href:"https://github.com/Daniel-Ash/danielash.me/"}, 
