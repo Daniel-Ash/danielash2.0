@@ -2,7 +2,7 @@ div.ShowHideContainer {
     display: flex;
     flex-direction: column;
     background-color: var(--neutral4);
-    padding: 10px;
+    padding: 6px 10px;
     cursor: pointer;
     border-radius: 0px 0px 4px 4px;
 }
