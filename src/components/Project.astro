@@ -12,8 +12,8 @@ export interface Props {
 const { project } = Astro.props as Props;
 
 ---
-<div class="projectMain">
-        <div>
+<div>
+        <div class="projectMain"> 
                 <h3>{project.name}</h3>
 
                 {project.about.map((paragraph) => (
@@ -40,8 +40,8 @@ const { project } = Astro.props as Props;
         flex-direction: column;
         gap: 2px;
         background-color: var(--neutral3);
-        padding: 2px 6px;
-        border-radius: 4px;
+        padding: 2px 20px 10px 10px;
+        border-radius: 4px 4px 0px 0px;
 }
 
 </style>
