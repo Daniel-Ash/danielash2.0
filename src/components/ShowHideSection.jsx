@@ -12,7 +12,7 @@ export default function ShowHideSection(props) {
     return (
     <div className="ShowHideContainer" onClick={showHide}>
         <div className="ShowHidePanel"> Show { show ? "less" : "more" } 
-            <img src="/icons/arrowIcon.svg" className={show.toString()}/>
+            <img src="/icons/arrowIcon.svg" width="6" height="9" className={show.toString()}/>
         </div>
         {show && 
             <div className={"displaySection"+show.toString()}>
