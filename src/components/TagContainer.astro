@@ -13,7 +13,6 @@ const tags = labelledContent.contents
 ---
     
     <div class="box">
-        <h4> {label} </h4>
         <div class="tagContainer">
             {tags.map((tag) => (
                 <>
@@ -27,12 +26,12 @@ const tags = labelledContent.contents
 
         .tag {
         background-color: var(--neutral4);
-        color: var(--neutral9);
-        padding: 4px 8px;
+        color: var(--secondary);
+        padding: 0px 8px;
         border-radius: 4px;
         font-family: 'Archivo', sans-serif;
         font-weight: 400; 
-        font-size: 12px;
+        font-size: 13px;
         }
 
         .tagContainer {

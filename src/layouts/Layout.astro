@@ -16,7 +16,7 @@ const { title } = Astro.props as Props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Yrsa&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Lato&family=Yrsa&display=swap');
 		</style>
 	</head>
 	<body>
@@ -31,8 +31,10 @@ const { title } = Astro.props as Props;
 
 	:root {
 	--accent: #96B7E9;
+	--secondary: #FFB775;
 	--neutral10: #E6E6E6;
-	--neutral9: #BFBFBF;
+	--neutral9: #ACAAAA;
+	--neutral8: #8C8C8C;
 	--neutral6: #4D4D4D;
 	--neutral4: #333333;
 	--neutral3: #2B2B2B;
@@ -43,8 +45,9 @@ const { title } = Astro.props as Props;
 	html {
 	background-color: var(--neutral1);
 	color: var(--neutral9);
-	font-family: "Yrsa", serif;
-	font-size: 18px;
+	font-family: "Lato", sans-serif;
+	font-size: 16px;
+	line-height: 25px;
 	}
 
 	/* Text elements */ 

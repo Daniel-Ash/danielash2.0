@@ -1,9 +1,11 @@
 ---
 import LinkButton from './LinkButton.astro';
 import ShowHideSection from './ShowHideSection.jsx';
+import LinkBox from './LinkBox.astro';
 
 import type { ProjectModel } from '../types';
 import TagContainer from './TagContainer.astro';
+import ProjectList from './ProjectList.astro';
 
 export interface Props {
   project: ProjectModel
@@ -14,17 +16,22 @@ const { project } = Astro.props as Props;
 ---
 <div>
         <div class="projectMain"> 
-                <h3>{project.name}</h3>
+                <div> 
+                        <h3>{project.name}</h3>
+                        <LinkBox links={project.links}/>
+                </div>
 
-                {project.about.map((paragraph) => (
-                        <>
-                        <p><Fragment set:html={paragraph}/></p>
-                        </>
-                ))}
+                <div>
+                        {project.about.map((paragraph) => (
+                                <>
+                                <p><Fragment set:html={paragraph}/></p>
+                                </>
+                        ))}
+                </div>
 
-        <LinkButton links={project.links}/>
-        {project.tags && <TagContainer labelledContent={project.tags}/>}
+                {project.tags && <TagContainer labelledContent={project.tags}/>}
         </div>
+
         <ShowHideSection client:visible> {project.keyLearnings && project.keyLearnings.map((keyLearning) => (
                         <>
                         <li> <Fragment set:html={keyLearning}/> </li>
@@ -38,7 +45,7 @@ const { project } = Astro.props as Props;
 .projectMain {
         display: flex;
         flex-direction: column;
-        gap: 2px;
+        gap: 10px;
         background-color: var(--neutral3);
         padding: 2px 20px 10px 10px;
         border-radius: 4px 4px 0px 0px;

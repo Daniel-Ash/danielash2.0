@@ -1,0 +1,53 @@
+---
+import type { ButtonLinkModel } from "../types";
+
+ export interface Props {
+    links: ButtonLinkModel[],
+} 
+
+const { links } = Astro.props as Props;
+
+---
+
+
+<div class="linksContainer">
+    {links.map((link) => (
+        <>
+            <a href={link.href} target={link.newTab ? "_blank" : "_self"} rel="noopener noreferrer">
+                <div class="link">
+                    {link.buttonText}
+                    {link.newTab && <img src="/icons/newTabIcon.svg" width="18" height="18" />}
+                </div>
+            </a> 
+        </>
+      ))}
+</div>
+
+
+<style>
+    .linksContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .linksContainer a {
+        font-family: 'Archivo', sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        color: var(--neutral8);
+        text-decoration: none;
+        width: fit-content;
+        line-height: 20px;
+    }
+
+    .link {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+    }
+
+    
+
+</style>
