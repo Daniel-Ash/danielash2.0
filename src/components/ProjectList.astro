@@ -11,16 +11,25 @@ const { projects } = Astro.props as Props;
 
 <div>
     <h2>Projects</h2>
-    {
-        projects.map((project) => (
-            <>
-                <div>
-                    <Project project={project} />
-                </div>
-            </>
-        ))
-    }
+    <div class="projectsContainer">
+        {
+            projects.map((project) => (
+                <>
+                    <div>
+                        <Project project={project} />
+                    </div>
+                </>
+            ))
+        }
+    </div>
 </div>
 <style>
+
+.projectsContainer {
+display: flex;
+flex-direction: column;
+gap: 15px;
+
+}
 
 </style>

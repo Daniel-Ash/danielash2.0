@@ -1,0 +1,68 @@
+div.ShowHideContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--neutral4);
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+div.ShowHidePanel {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: "Archivo", sans-serif;
+    color: var(--accent);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+div.ShowHidePanel:hover {
+    cursor: pointer;
+}
+
+img.true {
+    transform: rotate(90deg);
+    animation: rotateIcon 400ms;
+}
+
+@keyframes rotateIcon { 
+    0% {
+    transform: rotate(0deg);
+    }
+
+    100% {
+    transform: rotate(90deg);
+    }
+}
+
+img.false {
+    animation: derotateIcon 400ms;
+}
+
+@keyframes derotateIcon { 
+    0% {
+    transform: rotate(90deg);
+    }
+
+    100% {
+    transform: rotate(0deg);
+    }
+}
+
+.displaySectiontrue {
+    opacity: 1;
+    animation: fadeInSection 400ms;
+}
+
+@keyframes fadeInSection { 
+    0% {
+    opacity: 0
+    }
+
+    100% {
+    opacity: 1
+    }
+}
+
+
