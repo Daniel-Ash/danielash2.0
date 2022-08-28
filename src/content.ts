@@ -29,7 +29,7 @@ export const projectContent = [
 			"After building the initial danielash.me with vanilla html/css/js, I quickly reached for a framework to rebuild. My friend Schalk recommended I try <a href='https://astro.build'>Astro</a>, a framework for building fast content-driven sites.", 
 		],
 		links:[
-			{id: 0, buttonText:"View source on Github", href:"https://github.com/Daniel-Ash/danielash.me/", newTab: true}, 
+			{id: 0, buttonText:"View source on Github", href:"https://github.com/Daniel-Ash/danielash2.0/", newTab: true}, 
 		],
 		tags:{
 			label: "Technology:",
