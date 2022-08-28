@@ -1,6 +1,6 @@
 export const aboutContent = {
 	label: "About me",
-	contents: ["Hey! I'm Dan, a tech professional from New Zealand who is based in the United Kingdom."]
+	contents: ["Hey! I'm Dan, a Kiwi tech professional currently based in the UK."]
 }
 
 export const workContent = {
@@ -16,7 +16,7 @@ export const interestsContent = {
 	],
 	bullets: [
 				"<a href='https://www.troyhunt.com/'>Troy Hunt's blog</a>. Especially his posts on how he's built various services like Password Purgatory and Pwned Passwords. Those posts are what led me to deploy this site via Cloudflare pages.",
-				"Distributed systems. In particular, I have been enjoying this <a href='https://www.youtube.com/playlist?list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB'> lecture series </a> by Martin Kleppmann.",
+				"Distributed systems. In particular, I have been enjoying this <a href='https://www.youtube.com/playlist?list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB'> lecture series</a> by Martin Kleppmann.",
 				"Colour theory, including the physics of colour. Check out this <a href='https://www.youtube.com/watch?v=gwLQ0cDb4cE'>video by Marco Bucci</a> where he explores light and colour from both a technical and a painter's perspective."
 			]
 }
@@ -24,35 +24,37 @@ export const interestsContent = {
 export const projectContent = [
 	{
 		id: 0,
-		name: "Rocketship ",
-		about:["In this lockdown project I leveraged the prompt of a digital art gallery to explore Vue.js.", "Prior to being introduced to Vue, my programming experience was entirely centered around data analysis - mainly SQL and Jupyter Notebooks. My mind had been blown by the Vue 'get started' guide and I was very keen to build a full front end app."],
+		name: "Danielash.me v2",
+		about:[
+			"After building the initial danielash.me with vanilla html/css/js, I quickly reached for a framework to rebuild. My friend Schalk recommended I try <a href='https://astro.build'>Astro</a>, a framework for building fast content-driven sites.", 
+		],
 		links:[
-			{id: 0, buttonText:"Go to app", href:"https://rocketship-20.danielash1.repl.co/"}, 
-			{id: 1, buttonText:"View source on Github", href:"https://github.com/Daniel-Ash/Rocketship"},
+			{id: 0, buttonText:"View source on Github", href:"https://github.com/Daniel-Ash/danielash.me/", newTab: true}, 
 		],
 		tags:{
 			label: "Technology:",
 			contents: [
-				"Vue.js",
-				"Replit.com",
-				"Firebase"
+				"Astro",
+				"React",
+				"Cloudflare Pages",
+				"Figma"
 			]
 		},
 		keyLearnings:[
-			"Building a Vue site with Vite was awesome. I recall there was a steep learning curve to learn the syntax to pass props between components, but I got there.", 
-			"This project also helped me to get the hang of modern CSS. I was watching a number of <a href='https://www.youtube.com/kepowob'>Kevin Powell videos</a> at the time, and was inspired by his approach to responsive css, for example: allowing elements to breathe and fill space. Resize the page and watch the headers grow/shrink to see this in action. The layout also switches orientation based on flex-overflow rather than via a breakpoint.",
-			"Although it is not currently available, I also used this project to explore and implement firebase auth, which also saw me using things like the Vue router. I had an idea of introducing user generated content of some description, but that is for another lockdown.."
+			"Astro provided a perfect follow up to my experience building v1 with vanilla html/css/js, as it provides a framework level development experience, but then simply builds your page into static html/css.",
+			"When static content isn't enough, Astro makes it extremely easy to pull in components from any mainstream framework. For example, the 'See more' functionality is a React component.",
+			"This was my first experience with both Astro and React. I really enjoyed just running at a framework and feeling it out, and then jumping to docs/google as required - feels like a solid progress indicator for me.",
 		]
 	},
 	{
 		id: 1,
 		name: "Danielash.me",
 		about:[
-			"<b>Update! Danielash.me is now an Astro app! Project section incoming.</b>",
-			"<s>Well, you're looking at it</s>. My goal with this site was to make a good looking portfolio page. At the same time, I wanted to explore building a site without a framework to feel around the edges of vanilla html/css/js.", 
+			"For some time I've been in need of a good looking personal site. I also wanted to feel around the edges of vanilla html/css/js by building a site without using a framework.", 
 			"I also wanted to focus on performance and accessibility, and to deploy a site using Cloudflare Pages."],
 		links:[
-			{id: 0, buttonText:"View source on Github", href:"https://github.com/Daniel-Ash/danielash.me/"}, 
+			{id: 0, buttonText:"View source on Github", href:"https://github.com/Daniel-Ash/danielash.me/", newTab: true}, 
+			{id: 1, buttonText: "Go to site", href:"https://danielash-me.pages.dev/", newTab: true}
 		],
 		tags:{
 			label: "Technology:",
@@ -72,6 +74,28 @@ export const projectContent = [
 	},
 	{
 		id: 2,
+		name: "Rocketship ",
+		about:["In this lockdown project I leveraged the prompt of a digital art gallery to explore Vue.js.", "Prior to being introduced to Vue, my programming experience was entirely centered around data analysis - mainly SQL and Jupyter Notebooks. My mind had been blown by the Vue 'get started' guide and I was very keen to build a full front end app."],
+		links:[
+			{id: 0, buttonText:"Go to app", href:"https://rocketship-20.danielash1.repl.co/", newTab: true}, 
+			{id: 1, buttonText:"View source on Github", href:"https://github.com/Daniel-Ash/Rocketship", newTab: true},
+		],
+		tags:{
+			label: "Technology:",
+			contents: [
+				"Vue.js",
+				"Replit.com",
+				"Firebase"
+			]
+		},
+		keyLearnings:[
+			"Building a Vue site with Vite was awesome. I recall there was a steep learning curve to learn the syntax to pass props between components, but I got there.", 
+			"This project also helped me to get the hang of modern CSS. I was watching a number of <a href='https://www.youtube.com/kepowob'>Kevin Powell videos</a> at the time, and was inspired by his approach to responsive css, for example: allowing elements to breathe and fill space. Resize the page and watch the headers grow/shrink to see this in action. The layout also switches orientation based on flex-overflow rather than via a breakpoint.",
+			"Although it is not currently available, I also used this project to explore and implement firebase auth, which also saw me using things like the Vue router. I had an idea of introducing user generated content of some description, but that is for another lockdown.."
+		]
+	},
+	{
+		id: 3,
 		name: "Don McNewt",
 		about:[
 			"<a href='https://rgdsm.wordpress.com/'>Don McDonald</a> is an eccentric Wellingtonian who proliferates marginally coherent content seemingly ad hoc through a variety of local and digital media, including <a href='https://twitter.com/McDONewt'>Twitter</a>.", 
@@ -85,7 +109,7 @@ export const projectContent = [
 			]
 		},
 		links:[
-			{id: 0, buttonText:"View source on Github", href:"https://github.com/Daniel-Ash/don-mcnewt-bot"}, 
+			{id: 0, buttonText:"View source on Github", href:"https://github.com/Daniel-Ash/don-mcnewt-bot", newTab: true}, 
 		],
 		keyLearnings:[
 			"This was a fun project that got my head around Node & Express. In playing around, I made some fun requests that summarised the tweets of an account, and I was interested in extending this to a service that allowed any user to use the APIs to summarise a twitter users tweets, generate tweets, and post on a users behalf.",

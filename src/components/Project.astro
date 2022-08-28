@@ -5,7 +5,6 @@ import LinkBox from './LinkBox.astro';
 
 import type { ProjectModel } from '../types';
 import TagContainer from './TagContainer.astro';
-import ProjectList from './ProjectList.astro';
 
 export interface Props {
   project: ProjectModel
@@ -45,7 +44,7 @@ const { project } = Astro.props as Props;
 .projectMain {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 12px;
         background-color: var(--neutral3);
         padding: 2px 20px 10px 10px;
         border-radius: 4px 4px 0px 0px;
