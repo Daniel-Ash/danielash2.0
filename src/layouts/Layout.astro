@@ -106,7 +106,7 @@ const { title } = Astro.props as Props;
 	} 
 
 	.page {
-	margin-left: 250px;
+	margin-left: 18vw;
 	margin-top: 5vh;
 	margin-bottom: 50px;
 	}
@@ -118,12 +118,22 @@ const { title } = Astro.props as Props;
 	gap: 10px;
 	}
 
-	@media only screen and (max-width: 1224px) {
+	@media only screen and (max-width: 600px) {
 	.page {
-		margin-left: 2vw;
+		margin-left: 1vw;
 		margin-top: 5vh;
 	}
 	}
+
+	
+	@media only screen and (min-width: 600px) and (max-width: 1224px) {
+	.page {
+		margin-left: 12vw;
+		margin-top: 5vh;
+	}
+	}
+
+
 
 
 </style>
