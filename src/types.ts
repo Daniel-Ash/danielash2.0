@@ -11,6 +11,7 @@ export interface ButtonLinkModel {
   id: number,
   buttonText: string,
   href: string,
+  newTab: boolean,
 }
 
 export interface LabelledContentModel {
