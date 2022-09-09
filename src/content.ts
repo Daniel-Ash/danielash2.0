@@ -36,6 +36,7 @@ export const projectContent = [
 			contents: [
 				"Astro",
 				"React",
+				"TypeScript",
 				"Cloudflare Pages",
 				"Figma"
 			]
