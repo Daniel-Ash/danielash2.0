@@ -1,0 +1,55 @@
+---
+import Nav from '../components/Nav.astro';
+import BlogPosts from '../components/BlogPosts.astro';
+import '../styles/Main.css'
+
+export interface Props {
+	title: string;
+}
+
+const { frontmatter } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content="Hey! I'm Dan, a startup and tech leader from New Zealand.">
+		<link rel="icon" type="image/x-icon" href="/favicon.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{frontmatter.title} | Dan Ash</title>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Lato&family=Yrsa&display=swap');
+		</style>
+	</head>
+	<body>
+		<div class="page"> 
+			<div class="content">
+				<slot />
+			</div>
+		</div>
+	</body>
+</html>
+
+
+<style>
+	
+	.heading {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		padding: 0 0 20px 0;
+	}
+
+	.title {
+		margin: 0;
+	}
+	
+	.date {
+		margin: 0;
+		color: var(--neutral7);
+	}
+
+
+</style>
