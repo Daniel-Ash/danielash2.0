@@ -15,6 +15,7 @@ export const interestsContent = {
 				"Although I am unlikely to update this frequently, recent examples include:"
 	],
 	bullets: [
+				"Bartosz Ciechanowski has an <a href='https://ciechanow.ski/archives/'>insanely excellent blog</a> that has been blowing my mind recently. I am a big fan of YouTubers like <a href='https://www.3blue1brown.com/'> 3Blue1Brown </a> and I Bartosz' extremely intelligent interactive blog posts offer a refreshing take on science communication. I recommend checking out <a href='https://ciechanow.ski/internal-combustion-engine/'>Internal Combustion Engine</a> as a starter.",
 				"<a href='https://www.troyhunt.com/'>Troy Hunt's blog</a>. Especially his posts on how he's built various services like Password Purgatory and Pwned Passwords. Those posts are what led me to deploy this site via Cloudflare pages.",
 				"Distributed systems. In particular, I have been enjoying this <a href='https://www.youtube.com/playlist?list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB'> lecture series</a> by Martin Kleppmann.",
 				"Colour theory, including the physics of colour. Check out this <a href='https://www.youtube.com/watch?v=gwLQ0cDb4cE'>video by Marco Bucci</a> where he explores light and colour from both a technical and a painter's perspective."
