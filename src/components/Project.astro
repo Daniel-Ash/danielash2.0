@@ -17,7 +17,7 @@ const { project } = Astro.props as Props;
         <div class="projectMain"> 
                 <div class="projectDetails"> 
                         <h3>{project.name}</h3>
-                        {project.links.length > 1 && <LinkBox links={project.links}/>}
+                        {project.links.length > 0 && <LinkBox links={project.links}/>}
                         {project.about.map((paragraph) => (
                                 <>
                                 <p><Fragment set:html={paragraph}/></p>
