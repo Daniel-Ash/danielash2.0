@@ -1,0 +1,52 @@
+---
+
+---
+
+    <div class="nav">
+        <a href="/">
+            <div class="logo">
+                <img
+                    src="/danFinal.webp"
+                    width="25px"
+                    height="25px"
+                    alt="Dan's profile photo"
+                />
+                <h1 class="logo"> Dan Ash </h1>
+            </div>
+        </a>
+    </div>
+
+    <style>
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: var(--accent)
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .nav {
+        background-color: var(--neutral3);
+        margin: 0px;
+        padding-left: 18vw;
+    }
+
+    @media only screen and (max-width: 600px) {
+    .nav {
+        padding-left: 1vw;
+    }
+    }
+
+    
+    @media only screen and (min-width: 600px) and (max-width: 1224px) {
+    .page {
+        padding-left: 8vw;
+    }
+    }
+
+    </style>
+

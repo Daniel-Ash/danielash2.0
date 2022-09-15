@@ -5,6 +5,7 @@ import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
 import StandardSection from "../components/StandardSection.astro";
 import ProjectList from "../components/ProjectList.astro";
+import BlogPosts from "../components/BlogPosts.astro";
 
 //Content
 import { aboutContent, workContent, interestsContent, projectContent } from "../content";
@@ -28,6 +29,7 @@ const projects = projectContent
 		<StandardSection
 			labelledContent={interests}
 		/>
+		<BlogPosts/>
 		<ProjectList projects={projects} />
 
 	</main>
