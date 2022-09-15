@@ -15,12 +15,9 @@ const { project } = Astro.props as Props;
 ---
 <div>
         <div class="projectMain"> 
-                <div> 
+                <div class="projectDetails"> 
                         <h3>{project.name}</h3>
-                        <LinkBox links={project.links}/>
-                </div>
-
-                <div>
+                        {project.links.length > 1 && <LinkBox links={project.links}/>}
                         {project.about.map((paragraph) => (
                                 <>
                                 <p><Fragment set:html={paragraph}/></p>
@@ -46,8 +43,18 @@ const { project } = Astro.props as Props;
         flex-direction: column;
         gap: 12px;
         background-color: var(--neutral3);
-        padding: 2px 20px 10px 10px;
+        padding: 15px 20px 10px 10px;
         border-radius: 4px 4px 0px 0px;
+}
+
+.projectDetails {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+}
+
+.projectDetails h3 {
+        margin: auto 0 auto 0;
 }
 
 </style>
