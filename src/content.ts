@@ -15,6 +15,7 @@ export const interestsContent = {
 				"Although I am unlikely to update this frequently, recent examples include:"
 	],
 	bullets: [
+				"Bartosz Ciechanowski has an <a href='https://ciechanow.ski/archives/'>insanely excellent blog</a> that has been blowing my mind recently. I am a big fan of YouTubers like <a href='https://www.3blue1brown.com/'> 3Blue1Brown </a> and I Bartosz' extremely intelligent interactive blog posts offer a refreshing take on science communication. I recommend checking out <a href='https://ciechanow.ski/internal-combustion-engine/'>Internal Combustion Engine</a> as a starter.",
 				"<a href='https://www.troyhunt.com/'>Troy Hunt's blog</a>. Especially his posts on how he's built various services like Password Purgatory and Pwned Passwords. Those posts are what led me to deploy this site via Cloudflare pages.",
 				"Distributed systems. In particular, I have been enjoying this <a href='https://www.youtube.com/playlist?list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB'> lecture series</a> by Martin Kleppmann.",
 				"Colour theory, including the physics of colour. Check out this <a href='https://www.youtube.com/watch?v=gwLQ0cDb4cE'>video by Marco Bucci</a> where he explores light and colour from both a technical and a painter's perspective."
@@ -25,6 +26,7 @@ export const projectContent = [
 	{
 		id: 0,
 		name: "Danielash.me v2",
+		imageLink: "projectHeader3.webp",
 		about:[
 			"After building the initial danielash.me with vanilla html/css/js, I quickly reached for a framework to rebuild. My friend Schalk recommended I try <a href='https://astro.build'>Astro</a>, a framework for building fast content-driven sites.", 
 		],
@@ -50,6 +52,7 @@ export const projectContent = [
 	{
 		id: 1,
 		name: "Danielash.me",
+		imageLink: "projectHeader.webp",
 		about:[
 			"For some time I've been in need of a good looking personal site. I also wanted to feel around the edges of vanilla html/css/js by building a site without using a framework.", 
 			"I also wanted to focus on performance and accessibility, and to deploy a site using Cloudflare Pages."],
@@ -76,6 +79,7 @@ export const projectContent = [
 	{
 		id: 2,
 		name: "Rocketship ",
+		imageLink: "projectHeader4.webp",
 		about:["In this lockdown project I leveraged the prompt of a digital art gallery to explore Vue.js.", "Prior to being introduced to Vue, my programming experience was entirely centered around data analysis - mainly SQL and Jupyter Notebooks. My mind had been blown by the Vue 'get started' guide and I was very keen to build a full front end app."],
 		links:[
 			{id: 0, buttonText:"Go to app", href:"https://rocketship-20.danielash1.repl.co/", newTab: true}, 
@@ -98,6 +102,7 @@ export const projectContent = [
 	{
 		id: 3,
 		name: "Don McNewt",
+		imageLink: "projectHeader2.webp",
 		about:[
 			"<a href='https://rgdsm.wordpress.com/'>Don McDonald</a> is an eccentric Wellingtonian who proliferates marginally coherent content seemingly ad hoc through a variety of local and digital media, including <a href='https://twitter.com/McDONewt'>Twitter</a>.", 
 			"This Node.js project leveraged the Twitter & Open AI API's to generate and post similar tweets to Don MacDonald at a random cadence. "],

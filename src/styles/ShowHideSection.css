@@ -6,6 +6,11 @@ div.ShowHideContainer {
     cursor: pointer;
     border-radius: 0px 0px 4px 4px;
 }
+div.ShowHideContainer:hover {
+    background-color: var(--neutral5);
+
+}
+
 
 div.ShowHidePanel {
     display: flex;
@@ -15,10 +20,6 @@ div.ShowHidePanel {
     color: var(--accent);
     font-weight: 500;
     font-size: 14px;
-}
-
-div.ShowHidePanel:hover {
-    cursor: pointer;
 }
 
 img.true {
