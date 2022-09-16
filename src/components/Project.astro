@@ -15,7 +15,7 @@ const { project } = Astro.props as Props;
 <div>
         <div class="projectMain"> 
                 <div class="projectDetails">
-                        <img src={project.imageLink}/> 
+                        <img src={project.imageLink} class="image"/> 
                         <h3>{project.name}</h3>
                         {project.links.length > 0 && <LinkBox links={project.links}/>}
                         {project.about.map((paragraph) => (
@@ -39,9 +39,10 @@ const { project } = Astro.props as Props;
 <style>
 
 
-img {
+.image {
         margin-bottom: 10px;
-
+        max-height: 100%;
+        max-width: 100%;
 }
 .projectMain {
         display: flex;
