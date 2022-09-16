@@ -1,6 +1,7 @@
 export interface ProjectModel { 
   id: number,
   name: string,
+  imageLink: string,
   about: string[],
   links: ButtonLinkModel[],
   tags?: LabelledContentModel,

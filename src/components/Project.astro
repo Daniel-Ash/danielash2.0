@@ -1,5 +1,4 @@
 ---
-import LinkButton from './LinkButton.astro';
 import ShowHideSection from './ShowHideSection.jsx';
 import LinkBox from './LinkBox.astro';
 
@@ -15,7 +14,8 @@ const { project } = Astro.props as Props;
 ---
 <div>
         <div class="projectMain"> 
-                <div class="projectDetails"> 
+                <div class="projectDetails">
+                        <img src={project.imageLink}/> 
                         <h3>{project.name}</h3>
                         {project.links.length > 0 && <LinkBox links={project.links}/>}
                         {project.about.map((paragraph) => (
@@ -38,6 +38,11 @@ const { project } = Astro.props as Props;
 
 <style>
 
+
+img {
+        margin-bottom: 10px;
+
+}
 .projectMain {
         display: flex;
         flex-direction: column;

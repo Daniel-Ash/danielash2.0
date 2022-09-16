@@ -26,6 +26,7 @@ export const projectContent = [
 	{
 		id: 0,
 		name: "Danielash.me v2",
+		imageLink: "projectHeader3.png",
 		about:[
 			"After building the initial danielash.me with vanilla html/css/js, I quickly reached for a framework to rebuild. My friend Schalk recommended I try <a href='https://astro.build'>Astro</a>, a framework for building fast content-driven sites.", 
 		],
@@ -51,6 +52,7 @@ export const projectContent = [
 	{
 		id: 1,
 		name: "Danielash.me",
+		imageLink: "projectHeader.png",
 		about:[
 			"For some time I've been in need of a good looking personal site. I also wanted to feel around the edges of vanilla html/css/js by building a site without using a framework.", 
 			"I also wanted to focus on performance and accessibility, and to deploy a site using Cloudflare Pages."],
@@ -77,6 +79,7 @@ export const projectContent = [
 	{
 		id: 2,
 		name: "Rocketship ",
+		imageLink: "projectHeader4.png",
 		about:["In this lockdown project I leveraged the prompt of a digital art gallery to explore Vue.js.", "Prior to being introduced to Vue, my programming experience was entirely centered around data analysis - mainly SQL and Jupyter Notebooks. My mind had been blown by the Vue 'get started' guide and I was very keen to build a full front end app."],
 		links:[
 			{id: 0, buttonText:"Go to app", href:"https://rocketship-20.danielash1.repl.co/", newTab: true}, 
@@ -99,6 +102,7 @@ export const projectContent = [
 	{
 		id: 3,
 		name: "Don McNewt",
+		imageLink: "projectHeader2.png",
 		about:[
 			"<a href='https://rgdsm.wordpress.com/'>Don McDonald</a> is an eccentric Wellingtonian who proliferates marginally coherent content seemingly ad hoc through a variety of local and digital media, including <a href='https://twitter.com/McDONewt'>Twitter</a>.", 
 			"This Node.js project leveraged the Twitter & Open AI API's to generate and post similar tweets to Don MacDonald at a random cadence. "],
