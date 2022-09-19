@@ -1,6 +1,6 @@
 export const aboutContent = {
 	label: "About me",
-	contents: ["Hey! I'm Dan, a Kiwi tech professional currently based in the UK."]
+	contents: ["Hey! I'm Dan, a Kiwi tech professional currently travelling in the Balkans after a stint exploring the USA and Western Europe!"]
 }
 
 export const workContent = {
